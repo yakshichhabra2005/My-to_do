@@ -1,1 +1,140 @@
 
+
+* {
+  margin: 0;
+  padding: 0;
+ 
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #9363e5, #ca88a7); 
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  color: #4a4458;
+}
+
+
+.app {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: rgb(56, 56, 56);
+  text-decoration: underline;
+ 
+  width:100px;
+  border-radius:10px;
+  margin-left:125px;
+  
+  
+}
+h1:hover{
+  box-shadow:10px 10px 10px  rgba(126, 125, 125, 0.35);
+   border:1px solid #141315;
+   text-decoration: none;
+}
+
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+
+input {
+  flex: 1; 
+  padding: 11px 14px;
+  border-radius: 14px;
+  border: 1px solid #e3dcff;
+  outline: none;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #4a4458;
+}
+
+input::placeholder {
+  color: #9a95a8;
+}
+
+
+button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #6449ee);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(165, 148, 249, 0.35);
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+
+li {
+  background-color: #ffffff;
+  margin-bottom: 14px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 12px 24px rgba(165, 148, 249, 0.15);
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: scale(1.015);
+}
+
+
+
+
+.delete {
+  background: linear-gradient(135deg, #ea587c);
+  color: #ffffff;
+  font-size: 12px;
+  padding: 7px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.delete:hover {
+  box-shadow: 0 8px 18px rgba(255, 143, 171, 0.35);
+}
+
+
+@media (max-width: 500px) {
+  .controls {
+    flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
